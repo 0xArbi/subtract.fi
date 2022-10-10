@@ -58,6 +58,7 @@ export default function Home() {
             },
           ].map(({ link, title, image }) => (
             <a
+              key={link}
               href={link}
               target="_blank"
               className="flex items-center space-x-2"
