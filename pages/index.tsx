@@ -52,7 +52,7 @@ export default function Home() {
               title: "cw-fractionalize, permissionless NFT fractionalization",
             },
             {
-              link: "https://github.com/0xArbi/cw-fractionalize",
+              link: "https://cosmos-multi-send.vercel.app/",
               title:
                 "multi-send, Cosmos utility for bulk sending native and CW20 tokens",
             },
