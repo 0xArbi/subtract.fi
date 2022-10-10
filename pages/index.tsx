@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -34,39 +33,60 @@ export default function Home() {
       <div className="">
         <div className="text-lg">Work</div>
 
-        <ul className="list-disc pl-8">
-          <li>
+        <div className="ml-4 pt-2 space-y-2">
+          {[
+            {
+              link: "https://github.com/public-awesome/launchpad/pulls/0xArbi/",
+              title: "Stargaze",
+              image:
+                "https://pbs.twimg.com/profile_images/1507391623914737669/U3fR7nxh_400x400.jpg",
+            },
+            {
+              link: "https://github.com/DA0-DA0/dao-contracts/pulls/0xArbi/",
+              title: "DAO_DAO",
+              image:
+                "https://pbs.twimg.com/profile_images/1487643355353796610/OAvKjhNZ_400x400.jpg",
+            },
+            {
+              link: "https://cw-fractionalize-frontend.vercel.app/",
+              title: "cw-fractionalize, permissionless NFT fractionalization",
+            },
+            {
+              link: "https://github.com/0xArbi/cw-fractionalize",
+              title:
+                "multi-send, Cosmos utility for bulk sending native and CW20 tokens",
+            },
+          ].map(({ link, title, image }) => (
             <a
-              href="https://github.com/0xArbi/cw-fractionalize"
+              href={link}
               target="_blank"
               className="flex items-center space-x-2"
               rel="noreferrer"
             >
-              cw-fractionalize, permissionless NFT fractionalization
+              {image && <img src={image} className="rounded-full h-5 w-5" />}
+              <span className="">{title}</span>
             </a>
-          </li>
-        </ul>
+          ))}
+        </div>
       </div>
 
       <div className="space-y-1">
         <div className="text-lg">Members</div>
 
-        <ul className="list-disc pl-8">
-          <li>
-            <a
-              href="https://twitter.com/0xArb"
-              target="_blank"
-              className="flex items-center space-x-2"
-              rel="noreferrer"
-            >
-              <img
-                src="https://pbs.twimg.com/profile_images/1575496896390447104/JtPOS6U3_400x400.jpg"
-                className="rounded-full h-5 w-5"
-              />
-              <span>0xArb</span>
-            </a>
-          </li>
-        </ul>
+        <div className="pl-4 pt-2">
+          <a
+            href="https://twitter.com/0xArb"
+            target="_blank"
+            className="flex items-center space-x-2"
+            rel="noreferrer"
+          >
+            <img
+              src="https://pbs.twimg.com/profile_images/1575496896390447104/JtPOS6U3_400x400.jpg"
+              className="rounded-full h-5 w-5"
+            />
+            <span>0xArb</span>
+          </a>
+        </div>
       </div>
     </div>
   );
