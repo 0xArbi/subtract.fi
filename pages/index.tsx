@@ -17,23 +17,78 @@ export default function Home() {
         We&apos;re a developer collective contributing to all manner of
         interesting web3 projects, regardless of their position in the stack.
         Our ethos is aggressive minimalism in the face of exploding complexity.
+        Ping{" "}
+        <a
+          href="mailto:work@subtract.fi"
+          className="text-blue-600 hover:underline"
+        >
+          work@subtract.fi
+        </a>{" "}
+        to get in touch.
       </div>
 
       <div className="">
         <div className="text-lg">Interests</div>
 
         <ul className="list-disc pl-8">
-          <li>Cosmos (incl. CosmWasm)</li>
-          <li>Ethereum and L2&apos;s like Fuel</li>
+          <li>App chains and L2s</li>
+          <li>CosmWasm, Solidity, Rust</li>
           <li>Bridges</li>
           <li>{"MEV & block building"}</li>
         </ul>
       </div>
 
       <div className="">
-        <div className="text-lg">Work</div>
+        <div className="text-lg">Projects</div>
 
-        <div className="ml-4 pt-2 space-y-2">
+        <div className="ml-6 pt-1">
+          {[
+            {
+              link: "https://proposals.subtract.fi/",
+              title: "Interchain Governance",
+              description:
+                "Permissionless dashboard for submitting and viewing governance interchain governance proposals",
+            },
+            {
+              link: "https://explorer.subtract.fi/",
+              title: "Interchain Contract Explorer",
+              description:
+                "Frontend for reading and writing to any verified CosmWasm contract",
+            },
+            {
+              link: "https://cw-fractionalize-frontend.vercel.app/",
+              title: "cw-fractionalize",
+              description: "Permissionless CosmWasm NFT fractionalization",
+            },
+            {
+              link: "https://cosmos-multi-send.vercel.app/",
+              title: "cosmos multi-send",
+              description:
+                "Utility tool for bulk disbursements of native and CW20 tokens",
+            },
+          ].map(({ link, title, description }) => (
+            <div className="mb-2">
+              <a
+                key={link}
+                href={link}
+                target="_blank"
+                className="items-center"
+                rel="noreferrer"
+              >
+                <span className="">{title}</span>
+              </a>
+              {description && (
+                <div className="text-xs text-gray-600">{description}</div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="">
+        <div className="text-lg">Contributions</div>
+
+        <div className="ml-6 pt-1 space-y-2">
           {[
             {
               link: "https://github.com/public-awesome/launchpad/pulls/0xArbi/",
@@ -46,15 +101,6 @@ export default function Home() {
               title: "DAO_DAO",
               image:
                 "https://pbs.twimg.com/profile_images/1487643355353796610/OAvKjhNZ_400x400.jpg",
-            },
-            {
-              link: "https://cw-fractionalize-frontend.vercel.app/",
-              title: "cw-fractionalize, permissionless NFT fractionalization",
-            },
-            {
-              link: "https://cosmos-multi-send.vercel.app/",
-              title:
-                "multi-send, Cosmos utility for bulk sending native and CW20 tokens",
             },
           ].map(({ link, title, image }) => (
             <a
@@ -74,7 +120,7 @@ export default function Home() {
       <div className="space-y-1">
         <div className="text-lg">Members</div>
 
-        <div className="pl-4 pt-2">
+        <div className="pl-6 pt-1">
           <a
             href="https://twitter.com/0xArb"
             target="_blank"
