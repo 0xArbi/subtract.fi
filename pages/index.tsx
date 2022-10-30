@@ -67,9 +67,8 @@ export default function Home() {
                 "Utility tool for bulk disbursements of native and CW20 tokens",
             },
           ].map(({ link, title, description }) => (
-            <div className="mb-2">
+            <div key={link} className="mb-2">
               <a
-                key={link}
                 href={link}
                 target="_blank"
                 className="items-center"
