@@ -14,10 +14,9 @@ export default function Home() {
       </div>
 
       <div>
-        We&apos;re a developer collective contributing to all manner of
-        interesting web3 projects, regardless of their position in the stack.
-        Our ethos is aggressive minimalism in the face of exploding complexity.
-        Ping{" "}
+        We&apos;re a developer collective contributing to all layers of the web3
+        stack. Our ethos is aggressive minimalism in the face of exploding
+        complexity. Ping{" "}
         <a
           href="mailto:work@subtract.fi"
           className="text-blue-600 hover:underline"
@@ -47,7 +46,7 @@ export default function Home() {
               link: "https://proposals.subtract.fi/",
               title: "Interchain Governance",
               description:
-                "Permissionless dashboard for submitting and viewing governance interchain governance proposals",
+                "Dashboard for submitting and viewing governance interchain governance proposals",
             },
             {
               link: "https://explorer.subtract.fi/",
