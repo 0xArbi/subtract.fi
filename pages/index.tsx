@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className="max-w-lg mx-auto py-12 space-y-4">
+    <div className="max-w-lg mx-auto py-12 space-y-4 px-4">
       <Head>
         <title>Subtract</title>
         <link rel="icon" href="/favicon.ico" />
