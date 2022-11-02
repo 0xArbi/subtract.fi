@@ -30,7 +30,7 @@ export default function Home() {
         <div className="text-lg">Interests</div>
 
         <ul className="list-disc pl-8">
-          <li>App chains and L2s</li>
+          <li>App chains and {"L2's"}</li>
           <li>CosmWasm, Solidity, Rust</li>
           <li>Bridges</li>
           <li>{"MEV & block building"}</li>
@@ -44,9 +44,9 @@ export default function Home() {
           {[
             {
               link: "https://proposals.subtract.fi/",
-              title: "Interchain Governance",
+              title: "Interchain Governance Dashboard",
               description:
-                "Dashboard for submitting and viewing governance interchain governance proposals",
+                "Frontend for submitting and inspecting Cosmos based chain governance proposals",
             },
             {
               link: "https://explorer.subtract.fi/",
