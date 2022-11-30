@@ -55,12 +55,18 @@ export default function Home() {
                 "Frontend for reading and writing to any verified CosmWasm contract",
             },
             {
-              link: "https://cw-fractionalize-frontend.vercel.app/",
+              link: "https://fractionalize.subtract.fi/",
               title: "cw-fractionalize",
               description: "Permissionless CosmWasm NFT fractionalization",
             },
             {
-              link: "https://cosmos-multi-send.vercel.app/",
+              link: "https://cosmos-networks.subtract.fi/",
+              title: "Cosmos Network Helper",
+              description:
+                "Easily add Cosmos network configuration to your favorite wallets",
+            },
+            {
+              link: "https://multi-send.subtract.fi/",
               title: "cosmos multi-send",
               description:
                 "Utility tool for bulk disbursements of native and CW20 tokens",
